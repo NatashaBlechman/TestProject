@@ -7,10 +7,15 @@ public class Main {
         int enter = scanner.nextInt();
         String text = Integer.toString(enter);
         int length = text.length();
-        int i=0;
-        while (i<length){
-            char result = text.charAt(i++);
-            System.out.println(result);
+        if(length==5){
+            int i=0;
+            while (i<length){
+                char result = text.charAt(i++);
+                System.out.println(result);
+            }
+        }else{
+            System.out.println("Number dosnt have five digital");
         }
+
     }
 }
