@@ -1,3 +1,5 @@
+package homework1;
+
 import java.util.Scanner;
 
 public class Circumference {
@@ -9,6 +11,6 @@ public class Circumference {
             throw new IllegalArgumentException("Radius not correct");
         }
         double result = 2*Math.PI*radius;
-        System.out.print("Circumference is " + result);
+        System.out.print("homework1.Circumference is " + result);
     }
 }
