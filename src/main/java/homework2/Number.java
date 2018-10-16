@@ -9,17 +9,17 @@ public class Number {
     public static void main(String[] args) {
 
 
-        int a= init("Input number a :");
-        int b=init("Input number b: ");
-        int c=init("Input number c: ");
-        int d=init("Input number d: ");
-        int max=a;
+        int a = init("Input number a :");
+        int b = init("Input number b: ");
+        int c = init("Input number c: ");
+        int d = init("Input number d: ");
 
-        calculateMaxNumber(b, c, d, max);
+        System.out.println("Max number : " + calculateMaxNumber(a, b, c, d));
 
     }
 
-    private static void calculateMaxNumber(int b, int c, int d, int max) {
+    private static int calculateMaxNumber(int a, int b, int c, int d) {
+        int max = a;
         if (b > max) {
             max = b;
         }
@@ -29,7 +29,7 @@ public class Number {
         if (d > max) {
             max = d;
         }
-        System.out.println("Max number is  " + max);
+        return max;
     }
 
     private static int init(String message) {
