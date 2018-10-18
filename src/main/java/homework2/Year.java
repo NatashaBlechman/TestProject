@@ -22,13 +22,8 @@ public class Year {
     }
 
     private static int calculateDaysInYear(int year) {
-        int result;
-        if (((year % 4 == 0) && (year % 100 > 0))
-                || ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0))) {
-            result = 366;
-        } else {
-            result = 365;
-        }
+        int result = ((year % 4 == 0) && (year % 100 > 0)) || ((year % 4 == 0) &&
+                (year % 100 == 0) && (year % 400 == 0)) ? 366 : 365;
         return result;
     }
 }
