@@ -17,15 +17,7 @@ public class Apartment {
         System.out.println("Number of entrance is:" + entrance);
         System.out.println("Number of floor is: " + floor);
 
-
-//        int arr[] ={1,2,5,6,1000,4,6};
-//        int arrcount[]=new int[1000];
-//        for (int i = 0; i < arr.length; i++) {
-//            int index=arr[i];
-//            arrcount[index]++;
-//        }
-
-    }
+        }
 
     private static int calculateFloor(int apartmentNumber) {
         int ost = apartmentNumber % QUANTITY_APARTMENTS_IN_ENTRANCE;
