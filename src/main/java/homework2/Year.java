@@ -20,7 +20,7 @@ public class Year {
 
     private static int calculateDaysInYear(int year) {
         int result = (year % 4 == 0 && 0 < year % 100) ||
-               400 % year == 0 ? 366 : 365;
+                year % 400 == 0 ? 366 : 365;
         return result;
     }
 }

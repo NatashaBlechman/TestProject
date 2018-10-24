@@ -13,16 +13,17 @@ public class Triangle {
         int c = init("Input side c: ");
 
 
-        calculateSidesOfTriangle(a, b, c);
+        if (checkTriangleExisting(a, b, c)) {
+            System.out.println("This triangle is exist");
+        } else {
+            System.out.println("This triangle not exist");
+        }
+
     }
 
-    private static void calculateSidesOfTriangle(int a, int b, int c) {
-        if (a + b > c && a + c > b && c + b > a)
-            System.out.println("exist");
-
-        throw new IllegalArgumentException("This triangle not exist");
-
-        }
+    private static boolean checkTriangleExisting(int a, int b, int c) {
+        return (a + b > c && a + c > b && c + b > a);
+    }
 
     private static int init(String message) {
         System.out.print(message);
